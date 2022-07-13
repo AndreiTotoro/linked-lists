@@ -4,4 +4,6 @@ list = LinkedList.new
 
 list.append('test')
 list.append('blah')
-puts list.print_ends
+list.append('bdasd')
+list.append('blahaa')
+puts list.size

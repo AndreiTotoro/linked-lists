@@ -81,4 +81,9 @@ class LinkedList
     new_node.next_node = at(index + 1)
     at(index).next_node = new_node
   end
+
+  def remove_at(index)
+    @head = at(1) if index == 0
+    at(index - 1).next_node = at(index + 1)
+  end
 end

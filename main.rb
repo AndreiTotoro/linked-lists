@@ -20,3 +20,6 @@ list.to_s
 
 list.insert_at('Please work', 1)
 list.to_s
+
+list.remove_at(0)
+list.to_s

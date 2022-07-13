@@ -55,4 +55,12 @@ class LinkedList
     end
     has_value
   end
+
+  def find(value)
+    return nil if contains?(value) == false
+
+    size.times do |index|
+      return index if at(index).value == value
+    end
+  end
 end

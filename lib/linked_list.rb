@@ -36,13 +36,11 @@ class LinkedList
   attr_reader :head, :tail
 
   def at(index)
-    counter = 0
     current_node = @head
-    until counter == index
-      counter += 1
+    index.times do
       current_node = current_node.next_node
     end
-    current_node.value
+    current_node
   end
 
   def print_ends

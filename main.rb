@@ -6,5 +6,8 @@ list.append('test')
 list.append('blah')
 list.append('bdasd')
 list.append('blahaa')
-puts list.at(1)
+puts list.tail.value
 puts list.size
+list.pop
+puts list.size
+puts list.tail.value

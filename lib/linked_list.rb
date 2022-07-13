@@ -43,6 +43,11 @@ class LinkedList
     current_node
   end
 
+  def pop
+    @tail = at(size - 2)
+    @tail.next_node = nil
+  end
+
   def print_ends
     "Head: #{@head} Tail: #{@tail}"
   end

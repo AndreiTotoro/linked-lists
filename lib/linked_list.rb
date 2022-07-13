@@ -63,4 +63,16 @@ class LinkedList
       return index if at(index).value == value
     end
   end
+
+  def to_s
+    size.times do |index|
+      print "( #{at(index).value} )".chomp
+      if !at(index).next_node.nil?
+        print ' -> '.chomp
+      else
+        print ' -> nil'.chomp
+      end
+    end
+    print "\n"
+  end
 end

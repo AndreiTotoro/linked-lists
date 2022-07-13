@@ -9,9 +9,12 @@ list.append('blahaa')
 puts list.tail.value
 puts list.size
 puts list.contains?('blahaa')
-puts list.find('blahaa')
+p list.find('blahaa')
 list.pop
-puts list.find('blahaa')
+p list.find('blahaa')
 puts list.contains?('blahaa')
 puts list.size
 puts list.tail.value
+list.to_s
+list.prepend('This is new')
+list.to_s

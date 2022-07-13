@@ -75,4 +75,10 @@ class LinkedList
     end
     print "\n"
   end
+
+  def insert_at(value, index)
+    new_node = Node.new(value)
+    new_node.next_node = at(index + 1)
+    at(index).next_node = new_node
+  end
 end

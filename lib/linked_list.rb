@@ -24,13 +24,25 @@ class LinkedList
   end
 
   def size
-    counter = 0;
+    counter = 0
     current_node = @head
     until current_node.nil?
-      counter += 1;
+      counter += 1
       current_node = current_node.next_node
     end
     counter
+  end
+
+  attr_reader :head, :tail
+
+  def at(index)
+    counter = 0
+    current_node = @head
+    until counter == index
+      counter += 1
+      current_node = current_node.next_node
+    end
+    current_node.value
   end
 
   def print_ends

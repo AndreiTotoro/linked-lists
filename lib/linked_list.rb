@@ -48,7 +48,11 @@ class LinkedList
     @tail.next_node = nil
   end
 
-  def print_ends
-    "Head: #{@head} Tail: #{@tail}"
+  def contains?(value)
+    has_value = false
+    size.times do |index|
+      has_value = true if at(index).value == value
+    end
+    has_value
   end
 end

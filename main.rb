@@ -8,6 +8,8 @@ list.append('bdasd')
 list.append('blahaa')
 puts list.tail.value
 puts list.size
+puts list.contains?('blahaa')
 list.pop
+puts list.contains?('blahaa')
 puts list.size
 puts list.tail.value
